@@ -11,7 +11,7 @@
         </div>
         <pre></pre>
         <div class="form-group">
-            <label for="lastname">lastName</label><br>
+            <label for="lastname">nickname</label><br>
             <input #lastname = "ngModel" required minlength="2" maxlength="50" type="text" name="lastName" class="formcontrol" ngModel>
             <div *ngIf ="lastname.touched && lastname" class="alert alert-danger">
             <p *ngIf="lastname.errors?.required">LastName Required!!</p>
